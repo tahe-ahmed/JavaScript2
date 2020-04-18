@@ -48,4 +48,4 @@ function catWalk() {
     
 }
 
-let intervalID = window.setInterval(catWalk, 50)
+let intervalID = window.setInterval(catWalk, 50);
