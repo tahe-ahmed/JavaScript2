@@ -44,6 +44,7 @@ function catWalk() {
         }, 5000);
     }
     // keep moving if the flag flag(dancingCat) is false 
+
     else !dancingCat && move();
     
 }

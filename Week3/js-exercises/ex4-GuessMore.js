@@ -15,7 +15,9 @@ function f1(val) {
   return val;
 }
 f1(x);
-console.log(x);
+console.log(x); // output 9
+// as (x) is a varibale scoped globally and it passed to the f1 function by value not by
+// by reference . Also (val) scope is in the function block only
 
 const y = {
   x: 9
@@ -26,4 +28,5 @@ function f2(val) {
   return val;
 }
 f2(y);
-console.log(y);
+console.log(y); // output {x:10}
+// as (y) is an object and it's passed by reference so the (y.x) is changed 
