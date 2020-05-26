@@ -13,18 +13,20 @@ does not return anything but removes any duplicate elements from the array.
 
 // WRITE YOUR FUNCTION HERE
 function removeDuplicates(array){
-  for (let i = array.length; i > 0; i--) {
-      if (array.indexOf(array[i]) !== i) {
-        array.splice(i, 1);
-      }
-    }
-    return array;
-}
-
+   let uniqueArray = array.filter((item, index ) => {
+            // console.log(array.indexOf(item), index);
+            return array.indexOf(item) === index;
+        })
+      
+      return uniqueArray;
+  }
+  
 const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
-
+  
 removeDuplicates(letters);
-// console.log(removeDuplicates(letters));
-console.log(letters);
+
+console.log(removeDuplicates(letters));
+//   console.log(letters);
+// console.log(letters);
 if (letters == ['a', 'b', 'c', 'd', 'e', 'f'])
   console.log("Hooray!");
