@@ -39,9 +39,11 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     if (number % 3 === 0 && number % 5 === 0) {
       threeCallback();
       fiveCallback();
-    } else if (number % 3 === 0) {
+    }
+   if (number % 3 === 0) {
       threeCallback();
-    } else if (number % 5 === 0) {
+    } 
+   if (number % 5 === 0) {
       fiveCallback();
     }
   });
